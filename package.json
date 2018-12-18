@@ -24,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/bredele/uri-params-match/issues"
   },
-  "homepage": "https://github.com/bredele/uri-params-match#readme"
+  "homepage": "https://github.com/bredele/uri-params-match#readme",
+  "devDependencies": {
+    "tape": "^4.9.1"
+  }
 }
