@@ -10,6 +10,9 @@
     "type": "git",
     "url": "git+https://github.com/bredele/uri-params-match.git"
   },
+  "engines": {
+    "node": ">= 8.9.4"
+  },
   "keywords": [
     "uri",
     "match",
