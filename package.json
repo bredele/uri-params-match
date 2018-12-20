@@ -30,5 +30,8 @@
   "homepage": "https://github.com/bredele/uri-params-match#readme",
   "devDependencies": {
     "tape": "^4.9.1"
+  },
+  "dependencies": {
+    "equal-or-index": "^1.1.0"
   }
 }

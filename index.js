@@ -4,6 +4,7 @@
 
 const url = require('url')
 const querystring = require('querystring')
+const match = require('equal-or-index')
 
 /**
  * Strictly match URI query parameters with given object.
@@ -39,7 +40,7 @@ function contains (obj1, obj2) {
   let l = keys.length
   while (l--) {
     const key = keys[l]
-    result = result && obj1[key] === obj2[key]
+    result = result && match(obj1[key], obj2[key])
   }
   return result
 }

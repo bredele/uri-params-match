@@ -43,3 +43,23 @@ test('should not match URI when given object key/values are not contained in the
     lorem: 'ipsum'
   }), false)
 })
+
+test('should strictly match query parameters with possible matches', assert => {
+  assert.plan(2)
+  assert.equal(match('https://hello.com?name=ipsum&name=bob', {
+    name: ['ipsum', 'bob']
+  }), true)
+  assert.equal(match('https://hello.com?name=ipsum&name=bob', {
+    name: ['ipsum']
+  }), false)
+})
+
+test('should match query parameter with possible matches', assert => {
+  assert.plan(2)
+  assert.equal(match('https://hello.com?name=ipsum', {
+    name: ['ipsum', 'bob']
+  }), true)
+  assert.equal(match('https://hello.com?name=ipsum', {
+    name: ['bob']
+  }), false)
+})
