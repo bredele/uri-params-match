@@ -1,6 +1,6 @@
 {
   "name": "uri-params-match",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Match URI query parameters with given object",
   "main": "index.js",
   "scripts": {
